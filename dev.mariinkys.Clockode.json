@@ -38,8 +38,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/clockode.git",
-                    "tag": "0.1.2",
-                    "commit": "8a2f85fecc78eefc7ec0b19a8ec1a0a733cedb3b"
+                    "tag": "0.1.3",
+                    "commit": "f3c4a6703c3c31f6fe18e9ee110f552039d29834"
                 },
                 "cargo-sources.json"
             ]
