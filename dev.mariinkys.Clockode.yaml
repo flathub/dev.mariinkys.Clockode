@@ -37,6 +37,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mariinkys/clockode.git
-        tag: "0.2.1"
+        tag: 0.2.1
         commit: c84055cce3c49a79f4fe3889a41894c89d0b148e
       - cargo-sources.json
