@@ -11,13 +11,7 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
-  # - --device=dri
-  # Webcam access (currently no better option than this)
-  # https://docs.flatpak.org/en/latest/sandbox-permissions.html#device-access
-  # Automatically includes GPU support since "dri" is part of "all"
-  - --device=all
-  # PipeWire access for camera and audio (needed for QR scanning with the camera)
-  - --filesystem=xdg-run/pipewire-0:ro
+  - --device=dri
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin
 modules:
@@ -37,6 +31,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mariinkys/clockode.git
-        tag: 0.2.1
-        commit: cd43bdd55e499bc76c789e387d1fc60441bed8ec
+        tag: 0.2.2
+        commit: 10fa067c5c54406520614b21cfdb94adef04541c
       - cargo-sources.json
