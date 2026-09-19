@@ -2,7 +2,7 @@ app-id: dev.mariinkys.Clockode
 # Note: No additional GStreamer plugins needed - app uses pipewiresrc which is
 # included in org.freedesktop.Platform via PipeWire's gst-plugin-pipewire
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -31,6 +31,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mariinkys/clockode.git
-        tag: 0.2.7
-        commit: 4c63f954897dcc1b5469a3438fbcc349f68175db
+        tag: 0.2.8
+        commit: acd7be491627b65b4db59667291f1e820104bd3e
       - cargo-sources.json
