@@ -22,7 +22,7 @@ modules:
         CARGO_HOME: /run/build/clockode/cargo
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml --verbose
-      - cargo --offline build --release --verbose
+      - cargo --offline build --release --verbose --no-default-features --features flatpak-camera
       - install -Dm0755 ./target/release/clockode /app/bin/clockode
       - install -Dm0644 ./resources/dev.mariinkys.Clockode.desktop /app/share/applications/dev.mariinkys.Clockode.desktop
       - install -Dm0644 ./resources/dev.mariinkys.Clockode.metainfo.xml /app/share/metainfo/dev.mariinkys.Clockode.metainfo.xml
@@ -31,6 +31,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mariinkys/clockode.git
-        tag: 0.3.1
-        commit: 959e3ebe483548d2b5abcbdc1491ebe4bdd88db0
+        tag: 0.4.0
+        commit: 3e08cbe409bddd312040fcf9dbc0cc9dbd0f79e8
       - cargo-sources.json
